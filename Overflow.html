@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Codigo de Galaviz Cota Jorge A rturo-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: thistle;">
+   <style>
+#display {
+width: 300px;
+height: 300px;
+border: 1px solid black;
+margin-bottom: 10px;
+overflow: auto;
+}
+   </style>
+<div id="display"></div>
+<button onclick="mostrarTexto()">Mostrar Texto</button>
+<button onclick="LimpiarDisplay()">Limpiar display</button>
+<script>
+    function mostrarTexto(){
+var texto = prompt ("Texto a mostrar");
+var displayArea = document.getElementById("display");
+displayArea.innerHTML += "<p>" + texto + "</p>";
+
+}
+function LimpiarDisplay() {
+var displayArea =document.getElementById("display");
+displayArea.innerHTML ="";
+
+}
+</script>
+
+
+    <address style="padding-top: 200px;">Galaviz Cota Jorge Arturo <br>24/05/2024 <br>4ª Prog. Matutino</address>
+</body>
+</html>
